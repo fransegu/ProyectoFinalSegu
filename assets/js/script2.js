@@ -27,7 +27,7 @@ let $submitButton = document.getElementById('button1');
     $submitButton.addEventListener('click', function(e) {
       
       let $boxvalue = document.getElementById('edad').value;
-      $boxvalue = "" ? mostrarError ("Tienes que ingresar un número positivo mayor o igual a 1") : isNaN ($boxvalue) ? mostrarError ("Tienes que ingresar un número positivo mayor o igual a 1") : $boxvalue < 1 ? mostrarError("Tienes que ingresar un número positivo mayor o igual a 1") : edades.push($boxvalue);
+      $boxvalue = "" ? mostrarError ("Tienes que ingresar un número mayor o igual a 1") : isNaN ($boxvalue) ? mostrarError ("Tienes que ingresar un número positivo mayor o igual a 1") : $boxvalue < 1 ? mostrarError("Tienes que ingresar un número positivo mayor o igual a 1") : edades.push($boxvalue);
 
       contador(1);
      
